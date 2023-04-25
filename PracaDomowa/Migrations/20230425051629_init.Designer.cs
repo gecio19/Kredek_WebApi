@@ -11,7 +11,7 @@ using PracaDomowa.Data;
 namespace PracaDomowa.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230423203059_init")]
+    [Migration("20230425051629_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -31,10 +31,6 @@ namespace PracaDomowa.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AlbumNumber")
-                        .HasMaxLength(6)
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()

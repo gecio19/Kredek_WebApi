@@ -85,3 +85,5 @@ C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDom
 C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDomowa\obj\Debug\net6.0\PracaDomowa.pdb
 C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDomowa\obj\Debug\net6.0\PracaDomowa.genruntimeconfig.cache
 C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDomowa\obj\Debug\net6.0\ref\PracaDomowa.dll
+C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDomowa\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Czesio\Desktop\Koło_Kredek\Prace Domowe\Web_Api\Kredek_WebApi\PracaDomowa\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

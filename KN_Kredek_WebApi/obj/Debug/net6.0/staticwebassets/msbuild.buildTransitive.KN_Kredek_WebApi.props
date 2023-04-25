@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\KN_Kredek_WebApi.props" />
+</Project>

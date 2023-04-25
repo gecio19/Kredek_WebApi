@@ -5,12 +5,19 @@ namespace PracaDomowa.Models;
 public class Student
 {
 
+    public Student(int id,string name, string surname,string specialization)
+    {
+        Id = id;
+        Name = name;
+        Surname = surname;
+        Specialization = specialization;
+    }
+
+
     [Key]
     public int Id { get; set; }
 
-    [Required]
-    [MaxLength(6)]
-    public int AlbumNumber { get; set; }
+
 
     [Required]
     [MaxLength(100)]

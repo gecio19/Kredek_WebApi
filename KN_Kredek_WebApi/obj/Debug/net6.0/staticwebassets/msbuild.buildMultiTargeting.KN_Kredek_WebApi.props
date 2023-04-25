@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KN_Kredek_WebApi.props" />
+</Project>
