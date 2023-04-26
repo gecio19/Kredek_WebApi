@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PracaDomowa.Helpers;
 using PracaDomowa.Models;
 using PracaDomowa.Repositories;
 
@@ -65,10 +66,12 @@ namespace PracaDomowa.Controllers
 
 
         [HttpPut("{id:int}")]
-        public IActionResult UpdateStudent([FromRoute] int id, [FromBody] Student student)
+        public IActionResult UpdateStudent([FromRoute] int id, [FromBody] StudetHelper student)
         {
             var isSuccess = _studentsService.UpdateStudent(id, student);
 
+
+           // var isSuccess = true;
             if (!isSuccess)
             {
                 return NotFound();

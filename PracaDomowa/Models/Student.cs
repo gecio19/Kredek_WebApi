@@ -5,6 +5,12 @@ namespace PracaDomowa.Models;
 public class Student
 {
 
+    public Student()
+    {
+
+    }
+
+
     public Student(int id,string name, string surname,string specialization)
     {
         Id = id;

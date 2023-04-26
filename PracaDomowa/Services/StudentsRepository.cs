@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PracaDomowa.Data;
+using PracaDomowa.Helpers;
 using PracaDomowa.Models;
 
 namespace PracaDomowa.Repositories
@@ -50,7 +51,7 @@ namespace PracaDomowa.Repositories
         }
 
 
-        public bool UpdateStudent(int id,Student student)
+        public bool UpdateStudent(int id,StudetHelper student)
         {
             var studentToUpdate = _context.Students.Find(id);
 
@@ -58,16 +59,14 @@ namespace PracaDomowa.Repositories
             { 
                 return false;
             }
-
-            student.Id = studentToUpdate.Id;
-            studentToUpdate.Name = student.Name;
-            studentToUpdate.Surname = student.Surname;
-            studentToUpdate.Specialization = student.Specialization;
+            _mapper.Map<StudetHelper,Student>(student, studentToUpdate);
             _context.SaveChanges();
-
-
-            //studentToUpdate = _mapper.Map<Student>(student);
-
+            /* studentToUpdate.Id = id;
+             studentToUpdate.Name = student.Name;
+             studentToUpdate.Surname = student.Surname;
+             studentToUpdate.Specialization = student.Specialization;
+             _context.SaveChanges();
+ */
             return true;
         }
 

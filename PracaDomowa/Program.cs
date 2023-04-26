@@ -6,11 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddAutoMapper(typeof(Program));
+
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<DatabaseContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("PWRDBContext")));
 builder.Services.AddScoped<IStudentsRepository, StudentsRepository>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -24,8 +25,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
 
 
 app.UseHttpsRedirection();

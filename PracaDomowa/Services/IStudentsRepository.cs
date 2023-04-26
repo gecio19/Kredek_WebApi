@@ -1,4 +1,5 @@
-﻿using PracaDomowa.Models;
+﻿using PracaDomowa.Helpers;
+using PracaDomowa.Models;
 
 namespace PracaDomowa.Repositories
 {
@@ -12,7 +13,7 @@ namespace PracaDomowa.Repositories
 
         bool DeleteStudent(int id);
 
-        bool UpdateStudent(int id, Student student);
+        bool UpdateStudent(int id, StudetHelper student);
 
 
 
